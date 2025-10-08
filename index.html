@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arisoft Tech Solutions | Smart Software for Smart Schools</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -14,23 +14,36 @@
       <div class="flex items-center space-x-3">
         <h1 class="text-2xl font-bold">Arisoft Tech Solutions</h1>
       </div>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8 text-sm font-semibold">
         <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
         <li><a href="#about" class="hover:text-yellow-400">About</a></li>
         <li><a href="#mission" class="hover:text-yellow-400">Our Mission</a></li>
         <li><a href="#product" class="hover:text-yellow-400">Products</a></li>
-         <li><a href="proposal.html" class="hover:text-yellow-400">Proposal</a></li>
-
-
+        <li><a href="proposal.html" class="hover:text-yellow-400">Proposal</a></li>
         <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
       </ul>
-      <!-- Logo Placeholder (Right Corner) -->
-      <!-- Logo (top right corner) -->
-  <div class="logo">
-    <!-- Product Section --<img src="./logoplaceholder.png" alt="Logo"-->
-
-  </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 bg-blue-900 text-white px-6 py-4 text-sm font-semibold">
+      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#mission" class="hover:text-yellow-400">Our Mission</a></li>
+      <li><a href="#product" class="hover:text-yellow-400">Products</a></li>
+      <li><a href="proposal.html" class="hover:text-yellow-400">Proposal</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
   </nav>
 
   <!-- Hero Section -->
@@ -127,8 +140,13 @@
       easing: 'ease-in-out',
       reset: true
     });
+
+    // Toggle mobile menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
-
-
