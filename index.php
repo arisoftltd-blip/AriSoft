@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arisoft Tech Solutions | Smart Software for Smart Schools</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-blue-800 text-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <h1 class="text-2xl font-bold">Arisoft Tech Solutions</h1>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#mission" class="hover:text-yellow-400">Our Mission</a></li>
+        <li><a href="#product" class="hover:text-yellow-400">Products</a></li>
+         <li><a href="proposal.php" class="hover:text-yellow-400">Proposal</a></li>
+
+
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+      <!-- Logo Placeholder (Right Corner) -->
+      <!-- Logo (top right corner) -->
+  <div class="logo">
+    <!-- Product Section --<img src="./logoplaceholder.png" alt="Logo"-->
+
+  </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Schools Through Technology</h2>
+      <p class="text-lg mb-8">We design smart, secure, and simple software solutions for modern education management.</p>
+      <a href="#product" class="bg-yellow-400 text-blue-800 px-6 py-3 font-semibold rounded-lg hover:bg-yellow-300 transition">Explore Our Product</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-4 text-blue-800">About Us</h3>
+      <p class="max-w-3xl mx-auto leading-relaxed">
+        <strong>Arisoft Tech Solutions</strong> is a Ghana-based software development company specializing in creating innovative digital systems
+        for schools, businesses, and organizations. Our mission is to simplify operations through smart, user-friendly, and secure technology.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Mission Section -->
+  <section id="mission" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-4 text-blue-800">Who We Are</h3>
+      <p class="max-w-3xl mx-auto leading-relaxed">
+        <strong>ARISOFT</strong> is an initiative of tomorrow's innovation with a prime focus on delivering education through automation and technology. 
+        We have developed state-of-the-art smart environments combined with complete security and satisfaction for a number of schools in Accra.
+      </p>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-blue-800">Our Flagship Product</h3>
+      <h4 class="text-2xl font-semibold mb-2">Airsoft School Management System (ASMS)</h4>
+      <p class="max-w-2xl mx-auto mb-10 leading-relaxed">
+        ASMS is a complete school management platform designed to automate academic, financial, and administrative tasks. It empowers
+        teachers, administrators, and parents to collaborate efficiently in a digital environment.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h5 class="font-bold text-lg text-blue-700 mb-2">🎓 Student Management</h5>
+          <p>Admission, attendance, and performance tracking with real-time updates.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h5 class="font-bold text-lg text-blue-700 mb-2">💰 Fee Management</h5>
+          <p>Automated billing, payments, and arrears notifications for transparency.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-lg">
+          <h5 class="font-bold text-lg text-blue-700 mb-2">📈 Reports & Analytics</h5>
+          <p>Generate report cards, monitor trends, and make informed academic decisions.</p>
+        </div>
+      </div>
+      <a href="#contact" class="mt-10 inline-block bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        Request a Demo
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-4">Get in Touch</h3>
+      <p class="mb-8">Ready to digitize your school? Contact us today for a demo or partnership.</p>
+      <div class="max-w-xl mx-auto">
+        <form class="grid gap-4 text-left">
+          <input type="text" placeholder="Your Name" class="border p-3 rounded-lg w-full" required>
+          <input type="email" placeholder="Your Email" class="border p-3 rounded-lg w-full" required>
+          <textarea placeholder="Message" class="border p-3 rounded-lg w-full h-32"></textarea>
+          <button class="bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+        </form>
+      </div>
+      <div class="mt-10 text-gray-700">
+        <p><strong>Email:</strong> arisoftltd@gmail.com</p>
+        <p><strong>Phone:</strong> +233 204574662 / 241829832</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center">
+    <p>&copy; 2025 Arisoft Tech Solutions. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll Animation -->
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 1200,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/* =============================
+   Arisoft Tech Solutions Website
+   Author: [Your Name]
+   ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background: #083170;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo container (NEW) */
+nav .logo {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+nav .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffcc00;
+  transition: transform 0.3s ease;
+}
+
+nav .logo img:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+#home {
+  background: linear-gradient(to right, #083170, #0a58ca);
+  color: #fff;
+  text-align: center;
+  padding: 10rem 2rem 6rem;
+}
+
+#home h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#home p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#home a {
+  background: #ffcc00;
+  color: #083170;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#home a:hover {
+  background: #f3c613;
+}
+
+/* Section Styles */
+section {
+  padding: 6rem 2rem;
+}
+
+section h3 {
+  font-size: 2rem;
+  color: #083170;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #444;
+}
+
+/* Product Section */
+#product {
+  background: #eef2f8;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h5 {
+  color: #083170;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button {
+  background: #083170;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0b4ad6;
+}
+
+/* Footer */
+footer {
+  background: #001a4d;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+  section h3 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust logo on mobile */
+  nav .logo {
+    position: static;
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+  nav .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  .download-btn {
+  background: #083170;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.download-btn:hover {
+  background: #0b4ad6;
+}
+
+/* Hide navigation and button when printing */
+@media print {
+  nav, footer, .download-btn {
+    display: none;
+  }
+  body {
+    background: white;
+  }
+  .proposal-container {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+}
