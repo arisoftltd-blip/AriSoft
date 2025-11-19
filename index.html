@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -33,7 +33,7 @@
         <li><a href="#mission" class="hover:text-yellow-400">Our Mission</a></li>
         <li><a href="#product" class="hover:text-yellow-400">Products</a></li>
         <li><a href="proposal.html" class="hover:text-yellow-400">Proposal</a></li>
-        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+       <li><a href="#contact" class="hover:text-yellow-400" id="contact-link">Contact</a></li>
       </ul>
     </div>
 
@@ -44,18 +44,26 @@
       <li><a href="#mission" class="hover:text-yellow-400">Our Mission</a></li>
       <li><a href="#product" class="hover:text-yellow-400">Products</a></li>
       <li><a href="proposal.html" class="hover:text-yellow-400">Proposal</a></li>
-      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+       <li><a href="#contact" class="hover:text-yellow-400" id="contact-link">Contact</a></li>
     </ul>
   </nav>
+<!-- Hero Section -->
+<section id="home" class="pt-24 bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center py-12">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Schools Through Technology</h2>
+    <p class="text-lg mb-8">We design smart, secure, and simple software solutions for modern education management.</p>
+    <a href="#product" class="bg-yellow-400 text-blue-800 px-6 py-3 font-semibold rounded-lg hover:bg-yellow-300 transition">Explore Our Product</a>
+  </div>
+</section>
 
-  <!-- Hero Section -->
-  <section id="home" class="pt-24 bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Empowering Schools Through Technology</h2>
-      <p class="text-lg mb-8">We design smart, secure, and simple software solutions for modern education management.</p>
-      <a href="#product" class="bg-yellow-400 text-blue-800 px-6 py-3 font-semibold rounded-lg hover:bg-yellow-300 transition">Explore Our Product</a>
-    </div>
-  </section>
+  
+<!-- AriSoft 3D Team Coding Image -->
+<!-- Responsive Logo   class="w-full max-w-[300px] h-auto max-h-[50px] object-contain mx-auto" -->
+<img src="ARISOFT.png" alt="Logo" 
+     style="width: 100%; height: 670px; object-fit: cover; display: block;">
+
+
+
 
   <!-- About Section -->
   <section id="about" class="py-16 bg-white">
@@ -88,6 +96,7 @@
       ASMS is a comprehensive school management platform designed to automate academic, financial, and administrative tasks. It empowers
       schools, institutions, and organizations to manage their operations efficiently and securely.
     </p>
+    
 
     <div class="grid md:grid-cols-3 gap-8 text-left">
       <div class="bg-white shadow-md p-6 rounded-lg">
@@ -180,22 +189,25 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold text-blue-800 mb-4">Get in Touch</h3>
-      <p class="mb-8">Ready to digitize your school? Contact us today for a demo or partnership.</p>
-      <div class="max-w-xl mx-auto">
-        <form class="grid gap-4 text-left">
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwHneU9jeWGOn9kqHJEeZVS4Wg9pRH8-fAyvKUYmJx7yqITw/viewform?embedded=true" width="640" height="1083" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          <!--button class="bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button-->
-        </form>
-      </div>
-      <div class="mt-10 text-gray-700">
-        <p><strong>Email:</strong> arisoftltd@gmail.com</p>
-        <p><strong>Phone:</strong> +233 204574662 / 241829832</p>
-      </div>
-    </div>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-blue-50 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-xl p-10 max-w-lg w-full text-center">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Contact Us</h2>
+    <p class="text-gray-700 mb-6">
+      If you have any questions, want a demo, or wish to partner with us, feel free to reach out through the following channels:
+    </p>
+    
+    <ul class="text-gray-800 mb-6 space-y-2">
+      <li><strong>Email:</strong> <a href="mailto:arisoftltd@gmail.com" class="text-blue-700 hover:underline">arisoftltd@gmail.com</a></li>
+      <li><strong>Phone:</strong> +233 204574662 / +233 241829832</li>
+      <li><strong>Address:</strong> Accra, Ghana</li>
+    </ul>
+
+    <a href="mailto:arisoftltd@gmail.com" class="inline-block bg-blue-800 text-white px-6 py-3 font-semibold rounded-lg hover:bg-blue-700 transition">
+      Send an Email
+    </a>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 text-center">
@@ -219,5 +231,26 @@
       menu.classList.toggle('hidden');
     });
   </script>
+   <script>
+  // Get the contact link and section
+  const contactLink = document.getElementById('contact-link');
+  const contactSection = document.getElementById('contact');
+
+  contactLink.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default jump
+
+    // Scroll the contact section to the vertical center of the viewport
+    const sectionTop = contactSection.getBoundingClientRect().top + window.scrollY;
+    const sectionHeight = contactSection.offsetHeight;
+    const viewportHeight = window.innerHeight;
+
+    const scrollToPosition = sectionTop - (viewportHeight / 2) + (sectionHeight / 2);
+
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  });
+</script>
 </body>
 </html>
