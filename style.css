@@ -9,6 +9,11 @@
   scroll-behavior: smooth;
 }
 
+/* Add this to your <style> section */
+#contact {
+  scroll-margin-top: 40px; /* Adjust this based on your navbar height */
+}
+
 body {
   font-family: 'Poppins', Arial, sans-serif;
   background-color: #f8f9fb;
