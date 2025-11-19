@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proposal - Airsoft School Management System</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     /* =============================
        PROPOSAL PAGE ADDITIONS
@@ -54,14 +55,6 @@
 
     nav a:hover {
       color: #ffcc00;
-    }
-
-    .logo {
-      height: 55px;
-      width: auto;
-      position: absolute;
-      right: 3rem;
-      top: 10px;
     }
 
     /* PROPOSAL CONTENT */
@@ -117,6 +110,16 @@
       padding-top: 1rem;
     }
 
+    /* CONTACT SECTION */
+    #contact .proposal-container {
+      max-width: 600px;
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* FOOTER */
     footer {
       background: #001a4d;
       color: white;
@@ -139,23 +142,15 @@
       }
     }
 
-    /* RESPONSIVE MENU */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
         align-items: flex-start;
       }
-
       nav ul {
         flex-direction: column;
-        align-items: flex-start;
         gap: 1rem;
-        margin-top: 0.5rem;
-      }
-
-      .logo {
-        position: static;
-        align-self: flex-end;
         margin-top: 0.5rem;
       }
     }
@@ -168,9 +163,8 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="proposal.html" class="active">Proposal</a></li>
-     <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a></li>
     </ul>
-  
   </nav>
 
   <!-- PROPOSAL CONTENT -->
@@ -179,9 +173,7 @@
     <h2>Proposal for the Development and Implementation of the Airsoft School Management System</h2>
 
     <h3>1. Introduction</h3>
-    <p>In an era where digital transformation is essential to institutional efficiency, many educational institutions are embracing modern technology to streamline their operations. The Airsoft School Management System (ASMS) is a comprehensive digital platform designed to automate and enhance the management of student data, staff information, finance, library, hostel, and communication within schools and colleges.</p>
-
-    <p>This proposal presents the framework, objectives, features, implementation plan, and benefits of adopting the Airsoft School Management System in any educational institution seeking efficiency and accountability.</p>
+    <p>In an era where digital transformation is essential...</p>
 
     <h3>2. Objectives</h3>
     <ul>
@@ -205,8 +197,7 @@
     </ol>
 
     <h3>4. Technology Framework</h3>
-    <p>The Airsoft School Management System will be developed using modern, secure, and scalable technologies to ensure reliability and user-friendliness.</p>
-    <p><b>Hosting Environment:</b> Local-based server or on-premise installation with secure login access and data backup capabilities.</p>
+    <p>The system will be developed using modern, secure, and scalable technologies to ensure reliability.</p>
 
     <h3>5. Implementation Plan</h3>
     <ul>
@@ -214,7 +205,7 @@
       <li><b>Phase 2:</b> Software Development and Testing — 2 weeks</li>
       <li><b>Phase 3:</b> Pilot Deployment and User Feedback — 1 week</li>
       <li><b>Phase 4:</b> Full Implementation and Staff Training — 1 day</li>
-      <li><b>Phase 5:</b> Maintenance, Support, and System Updates — Continuous</li>
+      <li><b>Phase 5:</b> Maintenance, Support, and Updates — Continuous</li>
     </ul>
 
     <h3>6. Expected Outcomes and Benefits</h3>
@@ -228,10 +219,10 @@
     </ul>
 
     <h3>7. Estimated Cost</h3>
-    <p>A comprehensive cost analysis will follow after a full requirement study. However, the estimated cost of development, installation, and training ranges between <b></b> depending on the preferred modules and hosting option.</p>
+    <p>Cost will depend on selected modules and hosting option.</p>
 
     <h3>8. Conclusion</h3>
-    <p>The development and implementation of the Airsoft School Management System represent a strategic investment in the digital transformation of educational institutions. This system will improve efficiency, accountability, and communication, aligning schools with modern educational management standards. We look forward to your approval and partnership in realizing this transformation.</p>
+    <p>The development and implementation of ASMS represents a strategic investment in digital transformation...</p>
 
     <div class="signature">
       <p><b>Prepared by:</b><br>
@@ -244,19 +235,49 @@
       Name: Charles Arizi<br>
       Position: Project Developer<br>
       Signature: signed<br>
-          <button class="download-btn" onclick="window.print()">Download Proposal (PDF)</button>
+      <button class="download-btn" onclick="window.print()">Download Proposal (PDF)</button>
       </p>
     </div>
   </div>
 
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-blue-50 flex items-center justify-center min-h-screen py-16">
+    <div class="proposal-container max-w-md bg-white shadow-2xl rounded-2xl p-10 text-center">
+      <h2 class="text-4xl font-extrabold text-blue-900 mb-6">Contact Us</h2>
+      <p class="text-gray-700 mb-8">
+        Have questions, want a demo, or wish to partner with us? Reach out via any of the channels below:
+      </p>
+
+      <ul class="text-gray-800 mb-8 space-y-3 text-left">
+        <li><i class="fas fa-envelope text-blue-700 mr-2"></i><strong>Email:</strong> <a href="mailto:arisoftltd@gmail.com" class="text-blue-700 hover:underline">arisoftltd@gmail.com</a></li>
+        <li><i class="fas fa-phone-alt text-blue-700 mr-2"></i><strong>Phone:</strong> +233 204574662 / +233 241829832</li>
+        <li><i class="fas fa-map-marker-alt text-blue-700 mr-2"></i><strong>Address:</strong> Accra, Ghana</li>
+      </ul>
+
+      <a href="mailto:arisoftltd@gmail.com" class="inline-block bg-blue-800 text-white px-8 py-3 font-semibold rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">
+        Send an Email
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Arisoft Tech Solutions. All rights reserved.</p>
   </footer>
-    
+
+  <!-- SCROLL TO CONTACT -->
+  <script>
+    const contactLink = document.getElementById('contact-link');
+    const contactSection = document.getElementById('contact');
+
+    contactLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const sectionTop = contactSection.getBoundingClientRect().top + window.scrollY;
+      const sectionHeight = contactSection.offsetHeight;
+      const viewportHeight = window.innerHeight;
+      const scrollToPosition = sectionTop - (viewportHeight / 2) + (sectionHeight / 2);
+      window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
